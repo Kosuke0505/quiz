@@ -8,6 +8,7 @@ import question from './question';
 import answer from './answer';
 
 // スタックナビゲーションの作成
+// くそげーナビゲーション
 const AppNavigation = createStackNavigator(
   {
     Select1: {
