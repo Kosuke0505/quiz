@@ -7,21 +7,13 @@ export default class App extends React.Component {
 		return (
             <View style={{backgroundColor:'yellow', height:'100%'}}>
                 <View style={styles.container}>
-<<<<<<< HEAD
-                <Text>ゲロゲロゲーム</Text>
-                <Button
-                    title="start"
-                    onPress={() => {this.goquestion();}}>
-                </Button>
-=======
-                <Text style={styles.title}>ごみげーむ</Text>
+                <Text style={styles.title}>ゲロゲロげーむ</Text>
                     <View style={{backgroundColor:'yellow'}}>
                         <Button
                             title="start"
                             onPress={() => {this.goquestion();}}>
                         </Button>
                     </View>
->>>>>>> be325d953fd276ac757c00dddb32d8d8ac0c9f55
                 </View>
             </View>
 			);
