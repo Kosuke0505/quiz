@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { HeaderBackground } from 'react-navigation-stack';
 
 export default class App extends React.Component {
 	render() {
@@ -29,4 +30,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         height: '100%',
     },
+    title: {
+        backgroundColor:'yellow',
+        fontSize:50,
+        fontFamily:"Arial",
+    }
+
   });
