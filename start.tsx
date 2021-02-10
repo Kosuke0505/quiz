@@ -7,7 +7,7 @@ export default class App extends React.Component {
 		return (
             <View style={{backgroundColor:'yellow', height:'100%'}}>
                 <View style={styles.container}>
-                <Text style={styles.title}>ちんげーーむ</Text>
+                <Text style={styles.title}>ちんむ</Text>
                     <View style={{backgroundColor:'yellow'}}>
                         <Button
                             title="start"
