@@ -7,7 +7,7 @@ export default class App extends React.Component {
 		return (
             <View style={{backgroundColor:'yellow', height:'100%'}}>
                 <View style={styles.container}>
-                <Text>クイズゲームtest</Text>
+                <Text>ちんぽゲーム</Text>
                 <Button
                     title="start"
                     onPress={() => {this.goquestion();}}>
