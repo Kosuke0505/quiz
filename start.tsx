@@ -1,16 +1,27 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { HeaderBackground } from 'react-navigation-stack';
 
 export default class App extends React.Component {
 	render() {
 		return (
             <View style={{backgroundColor:'yellow', height:'100%'}}>
                 <View style={styles.container}>
+<<<<<<< HEAD
                 <Text>ゲロゲロゲーム</Text>
                 <Button
                     title="start"
                     onPress={() => {this.goquestion();}}>
                 </Button>
+=======
+                <Text style={styles.title}>ごみげーむ</Text>
+                    <View style={{backgroundColor:'yellow'}}>
+                        <Button
+                            title="start"
+                            onPress={() => {this.goquestion();}}>
+                        </Button>
+                    </View>
+>>>>>>> be325d953fd276ac757c00dddb32d8d8ac0c9f55
                 </View>
             </View>
 			);
@@ -29,4 +40,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         height: '100%',
     },
+    title: {
+        backgroundColor:'yellow',
+        fontSize:50,
+        fontFamily:"Arial",
+    }
+
   });
