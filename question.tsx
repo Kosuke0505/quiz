@@ -76,14 +76,14 @@ const quizlist = [
 ]
 
 export default class App extends React.Component {
-  constructor(props: any) {
+  constructor(props: any) {   //コンポートネント宣言
     super(props);
-    let quiz = {};
+    let quiz = {};      //変数宣言
     if (props.navigation.state.params &&　props.navigation.state.params.quiz_number) {
       console.log('if')
       console.log('test', props.navigation.state.params);
       quiz = quizlist[props.navigation.state.params.quiz_number];
-    } else {
+    } else {      //現状こっちに飛んでる
       console.log('else')
       quiz = quizlist[0];
     }
