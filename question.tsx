@@ -122,7 +122,10 @@ export default class App extends React.Component {
   }
   goanswer(check: boolean){
     //console.log('check', check);
-		this.props.navigation.navigate('Select3', {check,answer:this.state.quiz.answers.find((data: any) => data.check).answer});
+		this.props.navigation.navigate('Select3',
+     {
+       check:check,
+       answer:this.state.quiz.answers.find((data: any) => data.check).answer});
   }
 
   showButtons():any[] {
