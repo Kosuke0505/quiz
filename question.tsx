@@ -79,6 +79,8 @@ export default class App extends React.Component { //コンポートネント宣
   constructor(props: any) {  //初期化処理
     super(props);
     let quiz = {};      //変数宣言（色々入る）
+    console.log(props.navigation.state.params)
+    //console.log(props.navigation.state.params.quiz_number)
     if (props.navigation.state.params &&　props.navigation.state.params.quiz_number) {
       console.log('if')
       console.log('test', props.navigation.state.params);
