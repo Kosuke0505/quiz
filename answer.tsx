@@ -8,7 +8,7 @@ export default class App extends React.Component {
       result: props.navigation.state.params.check,
       answer: props.navigation.state.params.answer,
     }
-    console.log(props);
+    console.log(props.navigation.state.params.check);
     console.log(props.navigation.state.params.answer);
   }
     render() {

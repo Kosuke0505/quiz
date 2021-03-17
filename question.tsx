@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 const quizlist = [
   {
     title: '問題1',
-    content: '問題文',
+    content: '問題文1',
     answers: [
       {answer:'answer1', check: false },
       {answer:'answer2', check: false },
@@ -34,7 +34,7 @@ const quizlist = [
     },
     {
       title: '問題2',
-      content: '問題文',
+      content: '問題文2',
       answers: [
         {answer:'nswer1', check: false },
         {answer:'nswer2', check: false },
@@ -44,7 +44,7 @@ const quizlist = [
       },
       {
         title: '問題3',
-        content: '問題文',
+        content: '問題文3',
         answers: [
           {answer:'swer1', check: false },
           {answer:'swer2', check: false },
@@ -54,7 +54,7 @@ const quizlist = [
         },
         {
           title: '問題4',
-          content: '問題文',
+          content: '問題文4',
           answers: [
             {answer:'wer1', check: false },
             {answer:'wer2', check: false },
@@ -64,7 +64,7 @@ const quizlist = [
           },
           {
             title: '問題5',
-            content: '問題文',
+            content: '問題文5',
             answers: [
               {answer:'ans', check: false },
               {answer:'ans2', check: false },
@@ -79,13 +79,14 @@ export default class App extends React.Component { //コンポートネント宣
   constructor(props: any) {  //初期化処理
     super(props);
     let quiz = {};      //変数宣言（色々入る）
-    console.log(props.navigation.state.params)
-    //console.log(props.navigation.state.params.quiz_number)
+    console.log('question')
+    //console.log(props.navigation.state.params.quiz_number)下記のifは取得済みかどうか
     if (props.navigation.state.params &&　props.navigation.state.params.quiz_number) {
       console.log('if')
       console.log('test', props.navigation.state.params);
+      console.log(props.navigation.state.params.quiz_number)
       quiz = quizlist[props.navigation.state.params.quiz_number];
-    } else {      //現状こっちに飛んでるg
+    } else {      //
       console.log('else')
       quiz = quizlist[0];
     }
@@ -94,7 +95,7 @@ export default class App extends React.Component { //コンポートネント宣
       quiz: quiz
     }
   }
-
+  
 	render() {
 		return (
       <View style={{ height:'100%'}}>
@@ -124,6 +125,7 @@ export default class App extends React.Component { //コンポートネント宣
   }
   goanswer(check: boolean){
     //console.log('check', check);
+    console.log('goanswer')
 		this.props.navigation.navigate('Select3',
      {
        check:check,
